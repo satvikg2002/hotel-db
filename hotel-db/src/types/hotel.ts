@@ -1,7 +1,7 @@
 export interface NewHotelType {
     title?: string;
     description?: string;
-    feature?: string;
+    features?: string;
     location?: string;
     stars?: string;
     country?: string;

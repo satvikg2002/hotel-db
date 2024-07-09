@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 interface IProps {
   hotel: NewHotelType;
+  detailsPage?: boolean;
 }
 
-function Information({ hotel }: IProps) {
+function Information({ hotel, detailsPage }: IProps) {
   console.log(hotel);
   return (
     <div className="hotel-preview">
@@ -26,12 +27,12 @@ function Information({ hotel }: IProps) {
 
       <div className="description">
         <span className="reviews">
-          <strong className="review-number">stars </strong> (based on{" "}
-          {hotel.review} reviews)
+          <strong className="review-number">{hotel.stars} stars </strong> (based
+          on {hotel.review} reviews)
         </span>
         <hr />
 
-        <span className="feature">Main Feature: {hotel?.feature}</span>
+        <span className="feature">Main Feature: {hotel?.features}</span>
         <Link to={`/hotels/${hotel.id}`}>
           <button className="moreinfo-btn">View More Information</button>
         </Link>
