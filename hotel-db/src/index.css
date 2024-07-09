@@ -182,6 +182,8 @@ hr {
 .no-hotels {
   padding: 10px;
 }
+
+
 .edit {
   display: flex;
   flex-direction: column;
@@ -207,21 +209,23 @@ hr {
 }
 
 
-
 .create {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
+
 .create label {
   text-align: left;
   display: block;
 }
+
 .create h2 {
   font-size: 20px;
   color: rgb(77, 77, 77);
   margin-bottom: 30px;
 }
+
 .create input,
 .create textarea,
 .create select {
@@ -240,6 +244,8 @@ hr {
   border-radius: 8px;
   cursor: pointer;
 }
+
+
 @media screen and (max-width: 768px) {
   .title {
     padding-left: 10px;
