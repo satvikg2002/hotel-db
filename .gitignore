@@ -23,3 +23,5 @@
 /hotel-db/yarn-error.log*
 
 firebase.ts
+
+.github
