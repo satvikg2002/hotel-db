@@ -1,9 +1,7 @@
-import React from 'react'
+import { collection, getFirestore } from 'firebase/firestore'
+import { app } from './firebase'
 
-function controller() {
-    return (
-        <div>controller < /div>
-    )
-}
+export const firestore = getFirestore(app)
 
-export default controller
+// hotels collection
+export const hotelsCollection = collection(firestore, 'hotels');
