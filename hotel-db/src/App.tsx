@@ -1,5 +1,9 @@
 import React from "react";
 import { Route, Router, Routes } from "react-router-dom";
+import Create from "./components/Create";
+import Details from "./components/Details";
+import NotFound from "./components/NotFound";
+import Card from "./components/Card";
 
 function App() {
   return (
