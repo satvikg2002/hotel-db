@@ -6,6 +6,9 @@ function Navbar() {
     <nav className="navbar">
       <h1>Dashboard</h1>
       <div className="links">
+      <Link to="/search" style={{ color: "rgb(77, 77, 77)" }}>
+          Search
+        </Link>
         <Link to="/" style={{ color: "rgb(77, 77, 77)" }}>
           All Hotels
         </Link>
@@ -19,6 +22,7 @@ function Navbar() {
         >
           New Hotels
         </Link>
+        
       </div>
     </nav>
   );

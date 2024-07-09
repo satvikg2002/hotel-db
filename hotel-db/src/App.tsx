@@ -4,6 +4,7 @@ import Create from "./components/Create";
 import Details from "./components/Details";
 import NotFound from "./components/NotFound";
 import Card from "./components/Card";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/hotels/:id" element={<Details />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Card />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   );
 }
