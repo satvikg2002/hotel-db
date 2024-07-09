@@ -1,6 +1,7 @@
-import React from "react";
+import React ,{useState} from "react";
 import { NewHotelType } from "../types/hotel";
 import { Link } from "react-router-dom";
+
 
 interface IProps {
   hotel: NewHotelType;
@@ -8,7 +9,9 @@ interface IProps {
 }
 
 function Information({ hotel, detailsPage }: IProps) {
+  const [editDescription, setEditDescription] = useState(false);
   console.log(hotel);
+  console.log(hotel.description);
   return (
     <div className="hotel-preview">
       <div className="image-container">
@@ -33,9 +36,29 @@ function Information({ hotel, detailsPage }: IProps) {
         <hr />
 
         <span className="feature">Main Feature: {hotel?.features}</span>
-        <Link to={`/hotels/${hotel.id}`}>
-          <button className="moreinfo-btn">View More Information</button>
-        </Link>
+        {detailsPage ? (
+          <>
+            <p className="description-text">
+              {hotel.description}{" "}
+              <strong
+                className="edit-text"
+                onClick={() => setEditDescription(!editDescription)}
+              >
+                Edit Description
+              </strong>
+              {editDescription ? (
+                <p>edit me</p>
+              ) : null}
+            </p>
+            <button >
+              Delete Hotel
+            </button>
+          </>
+        ) : (
+          <Link to={`/hotels/${hotel.id}`}>
+            <button className="moreinfo-btn">View More Information</button>
+          </Link>
+        )}
       </div>
     </div>
   );
