@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="Navbar">
+    <nav className="navbar">
       <h1>Dashboard</h1>
       <div className="links">
         <Link to="/" style={{ color: "rgb(77, 77, 77)" }}>

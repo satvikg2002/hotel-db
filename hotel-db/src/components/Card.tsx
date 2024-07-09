@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card() {
-  return <div>Card</div>;
+  return <div className="card">Card</div>;
 }
 
 export default Card;
