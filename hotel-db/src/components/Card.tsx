@@ -40,21 +40,22 @@ function Card() {
     return 0;
   });
 
-
   return (
     <div className="card">
-      <h2 className="sort-title">Sort the hotels</h2>
-      <select
-        className="select"
-        defaultValue={""}
-        onChange={(e) => setSort(e.target.value)}
-      >
-        <option value="">Sort By</option>
-        <option value="title">Title</option>
-        <option value="perNight">Price per night</option>
-        <option value="stars">Stars</option>
-        <option value="review">Review</option>
-      </select>
+      <div className="sort">
+        <h2 className="sort-title">Sort the hotels</h2>
+        <select
+          className="select"
+          defaultValue={""}
+          onChange={(e) => setSort(e.target.value)}
+        >
+          <option value="">Sort By</option>
+          <option value="title">Title</option>
+          <option value="perNight">Price per night</option>
+          <option value="stars">Stars</option>
+          <option value="review">Review</option>
+        </select>
+      </div>
       <h2 className="title">All Hotels</h2>
       {hotels && hotels.length ? (
         <div>
