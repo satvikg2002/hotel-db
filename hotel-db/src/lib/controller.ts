@@ -1,7 +1,7 @@
 import { addDoc,collection, getFirestore,deleteDoc,doc,setDoc } from 'firebase/firestore'
 
 import { NavigateFunction } from 'react-router-dom';
-import { app } from './firebase'
+import { app } from "./firebase"
 import { AddHotelType } from "../types/hotel";
 
 export const firestore = getFirestore(app)
