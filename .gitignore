@@ -21,3 +21,5 @@
 /hotel-db/npm-debug.log*
 /hotel-db/yarn-debug.log*
 /hotel-db/yarn-error.log*
+
+firebase.ts
