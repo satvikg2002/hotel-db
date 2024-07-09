@@ -40,7 +40,6 @@ h1 {
   margin-left: auto;
   color: rgb(77, 77, 77);
 }
-
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -48,4 +47,164 @@ h1 {
 }
 .navbar a:hover {
   color: rgb(77, 77, 77);
+}
+
+.location-image {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.hotel-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.hotel-preview {
+  padding: 0px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 16px;
+  background-color: white;
+  border-bottom: 1px solid #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.hotel-preview:hover {
+  border: 2px solid rgb(77, 77, 77);
+}
+.hotel-preview h2 {
+  font-size: 20px;
+  color: white;
+  margin: 0px;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  margin: 10px;
+  padding: 15px;
+}
+
+.description-text {
+  margin: 10px 0;
+  color: gray;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.image-container {
+  position: relative;
+}
+
+.highlights {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+
+.highlights-text {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+}
+
+.highlights-price {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.per-night {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.moreinfo-btn {
+  background-color: rgb(251, 173, 18);
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.reviews {
+  color: rgb(251, 173, 18);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.review-number {
+  background-color: rgb(77, 77, 77);
+  padding: 8px;
+  color: white;
+  margin-right: 7px;
+  border-radius: 4px;
+}
+
+.feature {
+  color: rgb(77, 77, 77);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.region {
+  color: #9fa0a0;
+  font-size: 15px;
+}
+
+.no-hotels {
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .navbar {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(77, 77, 77);
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .hotel-preview {
+    width: 90%;
+    margin: 20px 0;
+    border-bottom: 1px solid #fafafa;
+  }
+  .highlights {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

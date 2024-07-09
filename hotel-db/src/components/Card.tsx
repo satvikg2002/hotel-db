@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { hotelsCollection } from "../lib/controller";
 import { DocumentData, QuerySnapshot, onSnapshot } from "firebase/firestore";
 import { NewHotelType } from "../types/hotel";
+import Information from "./Information";
 
 function Card() {
   const [hotels, setHotels] = useState<NewHotelType[]>([]);
@@ -24,18 +25,17 @@ function Card() {
     []
   );
 
-  console.log(hotels, "hotels");
-
   return (
     <div className="card">
       <h2 className="title">All Hotels</h2>
       {hotels && hotels.length ? (
         <div>
-            {
-                hotels?.map((hotel) => (
-                ))
-            }
+          {hotels?.map((hotel) => (
+            <Information key={hotel.id} hotel={hotel} />
+          ))}
         </div>
+      ) : (
+        <h2 className="no-hotels">There are no hotels. Please add some.</h2>
       )}
     </div>
   );
